@@ -1,0 +1,7 @@
+.polite-item {
+  text-decoration: none;
+}
+
+.polite-item-active {
+  color: red !important;
+}

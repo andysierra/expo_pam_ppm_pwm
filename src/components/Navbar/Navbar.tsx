@@ -8,7 +8,7 @@ interface props {
 
 export const Navbar = ({ title, className='', children=[] }: props) => {
   return (
-    <nav className={'navbar navbar-expand-lg navbar-light '+className}>
+    <nav className={'navbar navbar-expand-md navbar-light '+className}>
       <div className="container-fluid">
 
         <a className="navbar-brand" href="#">

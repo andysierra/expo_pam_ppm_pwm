@@ -1,0 +1,10 @@
+.simpleNumber {
+  outline: none;
+  border: none;
+  font-size: 2.8em;
+}
+
+.simpleNumber:focus {
+  outline: none;
+  border: none;
+}
