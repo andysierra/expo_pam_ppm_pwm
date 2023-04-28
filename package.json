@@ -1,9 +1,12 @@
 {
   "name": "codificador",
+  "homepage": "https://andysierra.github.io/expo_pam_ppm_pwm",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -14,6 +17,7 @@
     "bootstrap": "5.0",
     "bootstrap-icons": "^1.9.1",
     "d3": "^7.6.1",
+    "gh-pages": "^5.0.0",
     "react": "18",
     "react-dom": "18",
     "react-router-dom": "^6.4.1"
