@@ -1,6 +1,6 @@
 import { CvtData, CvtResult } from "../types/dto";
 
-export const useGraphVoltages = (data:CvtData, results:CvtResult, setOutput:React.Dispatch<React.SetStateAction<string>>) => {
+export const useGraphVoltages = (data:CvtData, results:CvtResult, setOutput:React.Dispatch<React.SetStateAction<string>>|undefined = undefined) => {
   console.table(results.sgmTable);
   console.table(results.spanTable);
 
@@ -11,7 +11,7 @@ export const useGraphVoltages = (data:CvtData, results:CvtResult, setOutput:Reac
   const itvSection = (data.itvPorSgm!-1).toString(2).length;
   
   const print = (line:string) => {
-    setOutput(console => console+(console.length<1? line : "\n"+line));
+    //setOutput(console => console+(console.length<1? line : "\n"+line));
   }
 
   print('# de bits para segmentos: '+results.sgmTable?.length+'; # de bits para intervalos: '+results.spanTable?.length);
